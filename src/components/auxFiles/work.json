@@ -2,25 +2,25 @@
     "works": [
         {
             "id": "qa",
-            "name": "Analista de Testes",
+            "name": "AnalistaTestes",
             "img": "mecanica.png",
             "description": "É o responsável por identificar e definir os testes exigidos, monitorar o processo de teste em detalhes e os resultados em cada ciclo de teste e avaliar a qualidade geral."
         },
         {
             "id": "dev-front",
-            "name": "Desenvolvedor Front-End",
+            "name": "DesenvolvedorFrontEnd",
             "img": "construcao.png",
             "description": "O desenvolvedor front-end é responsável pela experiência do usuário dentro de uma aplicação web, é ele quem vai desenhar e desenvolver as páginas com as quais, posteriormente, o usuário irá interagir."
         },
         {
             "id": "dev-back",
-            "name": "Desenvolvedor Back-End",
+            "name": "DesenvolvedorBackEnd",
             "img": "saude.png",
             "description": "O desenvolvedor back-end aquele que está por dentro das linguagens de programação, de desenvolvimento de software, bem como ainda domina conceitos acerca do HTML, CSS e outras ferramentas importantes."
         },
         {
             "id": "dev-full",
-            "name": "Desenvolvedor Full-Stack",
+            "name": "DesenvolvedorFullStack",
             "img": "educacao.png",
             "description": "Essa pessoa pode contribuir em qualquer lugar com uma equipe de desenvolvimento de produto digital, conforme necessário."
         },
