@@ -1,0 +1,64 @@
+.containerItensAnuncios 
+{
+    background-color: white;
+    border: 2px solid var(--color-default);
+    border-radius: 4px;
+    display: flex;
+    width: 93%;
+    height: auto;
+    flex-direction: row;
+    margin: 3%;
+    transition: 1ms;
+    text-decoration: none;
+}
+
+.align-icon_text {
+    display: flex;
+    text-shadow: 1px 1px green;
+}
+
+.green {
+    color: greenyellow;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.red {
+    color: red;
+}
+
+.containerItensAnuncios a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8%;
+    text-decoration: none;
+    color: black;
+    height: 100px;
+    text-decoration: none;
+    padding: 5% 2%;
+    transition: 1ms;
+}
+
+.containerItensAnuncios:active {
+    background-color: var(--color-default);
+}
+.containerItensAnuncios a:active{
+    color: white;
+}
+.itensAnunciosImg {
+    width: 30%;
+}
+
+.itensAnunciosImg img{
+    width: 100px;
+    height: 90px;
+    border-radius: 100%;
+}
+
+.itensAnunciosTxt {
+    width: 70%;
+    margin-left: 3%;
+}

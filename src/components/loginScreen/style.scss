@@ -1,0 +1,49 @@
+@import '../auxFiles/variable';
+
+.contentOrange{
+    background-color: $colorContext;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+    input[type="email"], input[type="password"]{
+        margin-top: 5%;
+        height: 22px;
+        border-radius: 6px;
+        width: 65%;
+        border: 0px none;
+        padding: 2%;
+        font-size: 16px;
+        &:focus{
+            outline: none;
+            box-shadow: 0 0 0 2pt $focusInput;
+        }
+    }
+    button[type="submit"]{
+        outline: none;
+        text-decoration: none;
+        border: none;
+        border-radius: 6px;
+        width: 35%;
+        height: 35px;
+        background-color: white;
+        font:{
+            size: 16px;
+            weight: bold;
+        }
+        margin-top: 3%;
+        margin-bottom: 3%;
+        &:active{
+            background-color:rgb(8, 216, 8);
+            color: white;
+            box-shadow: 0 0 0 1pt white;
+            border:transparent;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

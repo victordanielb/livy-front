@@ -1,0 +1,36 @@
+.selectBox {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+.selectBox .selectedBox {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: auto;
+  padding: 3px;
+  background-color: red;
+  z-index: 2;
+}
+.selectBox .selectedBox .selectedItem {
+  width: auto;
+  min-width: 20%;
+}
+.selectBox .selectedBox svg {
+  width: auto;
+  min-width: 5%;
+}
+.selectBox .optionsSelect {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

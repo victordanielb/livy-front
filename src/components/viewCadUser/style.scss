@@ -1,0 +1,41 @@
+@import '../auxFiles/variable';
+
+.cadUser{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    label{
+        color:#7e7a7a;
+    }
+    input{
+        border: 0px none;
+        border-bottom: 1px solid $colorContext;
+        border-radius: 0px;
+        height: 30px;
+        padding: 2%;
+        font-size: 16px;
+        font-weight: bold;
+        &:focus{
+            outline: none;
+            box-shadow: 0 0 0 2pt $focusInput;
+            
+        }
+    }
+}
+
+.buttonSubmit{
+    height: 40px;
+    padding: 2%;
+    width: 70%;
+    border: 0px transparent;
+    background-color: $colorContext;
+    border-radius: 16px;
+    align-self: center;
+    color: white;
+    margin-bottom: 5%;
+    font:{
+        size:15px;
+        weight: bold;
+    }
+}

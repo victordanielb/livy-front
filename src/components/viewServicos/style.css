@@ -1,0 +1,94 @@
+.container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+}
+.container footer {
+  height: 50px;
+  width: 100%;
+  background-color: var(--color-default);
+}
+.content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.rowContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.inputWithIcon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputWithIcon input {
+  width: 70%;
+  height: 20px;
+  border-radius: 12px 0px 0px 12px;
+  padding: 10px;
+  font-size: 20px;
+}
+.inputWithIcon input:focus{
+  border: 2px solid #b0beff;
+  border-radius: 12px 0px 0px 12px;
+  outline: none;
+}
+.buttonIcon {
+  background-color: var(--color-default);
+  height: 44px;
+  width: 10%;
+  border-radius: 0px 12px 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonIcon:active {
+  background-color: white;
+}
+
+.buttonIcon svg {
+  font-size: 40px;
+  color: white;
+}
+.buttonIcon svg:active {
+  color: black;
+}
+
+#inputSearch{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-radius: 12px 0px 0px 12px;
+  height: 27px;
+}
+#inputSearch:focus{
+  border:transparent;
+  height: 24px;
+}
+
+@media only screen and (min-width: 720px) {
+  #inputSearch {
+    padding: 5px 10px;
+  }
+}

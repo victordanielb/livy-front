@@ -1,0 +1,38 @@
+input {
+    cursor: pointer;
+}
+
+.rowLine .column {
+    width: 100%;
+}
+
+.buttonsGroup-one {
+    justify-content: center;
+}
+
+.customButtom-two {
+    width: auto;
+    height: auto;
+}
+
+.customButtom-two a {
+    margin: 0;
+    height: auto;
+    width: 300px;
+    border: inherit;
+    padding: 5px 10px;
+    border-radius: 4px;
+    align-items: center;
+    box-shadow: 0 0 3px 1px black;
+    background-color: var(--color-default);
+}
+
+.customButtom-two a > b {
+    margin: 0;
+}
+
+.customButtom-two a > svg {
+    margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

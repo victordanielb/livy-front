@@ -1,0 +1,43 @@
+.grapContainer{
+    display: flex;
+    width: 85%;
+    height: 75px;
+    margin: 3%;
+}
+
+.grapContainer a{    
+    background-color: white;
+    display: flex;
+    border: 1px solid var(--color-default);
+    border-radius: 8px;
+    width: 100%;
+    justify-content: center;
+    height: 50px;
+    padding: 3%;
+    color: black;
+    font-size: 22px;
+}
+
+.grapContainer a:active {
+    
+    background-color: var(--color-default);
+    color: white;
+
+}
+
+.grapTxtItem {
+    
+    display: flex;
+    height: 100%;
+    width: 60%;
+    align-items: center;
+    
+}
+
+.grapTxtVal{
+    display: flex;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: flex-end;
+}

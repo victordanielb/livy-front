@@ -1,0 +1,72 @@
+.lastWorkImage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 5%;
+  background-color: var(--color-default);
+}
+.lastWorkImage img {
+  margin: 3%;
+  width: 95%;
+  height: 350px;
+}
+
+.arrowDiv {
+  margin-top: 55%;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  color: black;
+  cursor: pointer;
+}
+.arrowDiv svg {
+  width: 70%;
+  margin-left: 3%;
+  font-size: 80px;
+  color: rgba(0, 0, 0, 0.151);
+}
+.arrowDiv svg:hover {
+  color: white;
+}
+.arrowDiv svg:active {
+  color: var(--color-default);
+}
+
+.workComment {
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 89%;
+  height: auto;
+  display: flex;
+  margin: 2%;
+  padding: 3%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  border-size: 1px;
+  border-radius: 10px;
+  border-color: white;
+  border-style: solid;
+}
+
+.workUser {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+  width: 89%;
+  height: auto;
+  display: flex;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+
+/*# sourceMappingURL=style.css.map */

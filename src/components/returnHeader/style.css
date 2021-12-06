@@ -1,0 +1,12 @@
+.containerHeader {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid white;
+    background-color: var(--color-default);
+    height: 50px; 
+}
+.containerHeader svg {
+    margin-top: 50%;
+    margin-left: 50%;
+    color: white;
+}

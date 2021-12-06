@@ -1,0 +1,21 @@
+.headerContainer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5%;
+    background-color: var(--color-default);
+    position: relative;
+}
+
+.headerContainer svg {
+    color: white;
+    margin-top: 20%;
+    margin-left: 50%;
+}
+
+.headerContainer .icon-chat {
+    position: absolute;
+    top: 7px;
+    right: 18px;
+    margin: 0;
+}

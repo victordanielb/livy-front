@@ -1,0 +1,51 @@
+{
+    "messages" : 
+    [
+        {
+            "id": 1,
+            "type": "none",
+            "anuncio": 363,
+            "message": "Olá Boa noite, tudo bem?"
+        },
+        {
+            "id": 2,
+            "type": "worker",
+            "anuncio": 363,
+            "message": "Boa noite, tudo bem sim!"
+        },
+        {
+            "id": 1,
+            "type": "none",
+            "anuncio": 363,
+            "message": "Gostaria de saber quando pode começar o serviço ? "
+        },
+        {
+            "id":2,
+            "type": "worker",
+            "anuncio": 363,
+            "message": "tenho disponibilidade 25/10 pode ser? "
+        },
+        {
+            "id": 1,
+            "type": "none",
+            "anuncio": 363,
+            "message": "Claro , pode ser sim, no periodo da manhã de preferencia"
+        },
+        {
+            "id": 2,
+            "type": "none",
+            "anuncio": 363,
+            "message": "Tem desconto se pagar avista?"
+        },{
+            "id": 1,
+            "type": "worker",
+            "anuncio": 363,
+            "message": "Podemos fazer um desconto sim de 5%"
+        },{
+            "id": 2,
+            "type": "none",
+            "anuncio": 363,
+            "message": "Maravilha , fico no aguardo"
+        }
+    ]
+}

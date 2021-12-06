@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat Livy!</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="chat">
+        <div class="messages"></div>
+        <input type="text" name="message" placeholder="Facilite o seu contato">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script type="text/javascript">
+        var socket = io('http://localhost:3001');
+
+        function renderMessage(message){
+            $('.messages').append('<div class="message"><strong>'+ message.message )
+        }
+
+        socket.on('receivedMessage', function(message){
+            renderMessage(message);
+        });
+
+        $('#chat').submit(function(event) { 
+            event.preventDefault();
+
+        var message = $('input[name=message]').val();
+
+        if (message.length) {
+            var messageObject = {
+                message:message,
+            };
+            
+            renderMessage(messageObject);
+            
+            socket.emit('sendMessage', messageObject);
+        };
+
+        });
+    </script>
+    
+</body>
+</html>

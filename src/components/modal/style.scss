@@ -1,0 +1,111 @@
+@import "../auxFiles/variable";
+
+.modal-container {
+
+    position: absolute;
+    z-index: 2;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+
+    .content-modal {
+        display: flex;
+        width: 80%;
+        background: linear-gradient($colorContext, $orange_message);
+        align-items: center;
+        height: auto;
+        flex-direction: column;
+        padding: 5%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 32px;
+        box-shadow: 0px 0px 8px 3px black;
+        border: 1px solid white;
+        box-shadow: 0px 0px 13px 2px orangered;
+        text-align: center;
+    }
+
+    .button-beside {
+        margin-top: 5%;
+        display: flex;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        button {
+            margin: 3%;
+            border: 1px solid $white;
+            border-radius: 8px;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 17px;
+            background: $white;
+            height: 41px;
+            width: 104px;
+        }
+
+        #cancel-button {
+            color: rgb(168, 12, 12);
+
+            &:disabled {
+                color: rgb(102, 83, 83);
+            }
+        }
+
+        #done-button {
+            color: rgb(9, 179, 9);
+            box-shadow: 0px 0px 6px 2px rgb(9, 179, 9);
+
+            &:disabled {
+                color: rgba(199, 241, 199, 0.842);
+                box-shadow: none;
+            }
+        }
+    }
+
+    .close-icon {
+        align-self: flex-end;
+
+        svg {
+            font-size: 42px;
+        }
+    }
+}
+
+input[type="date"]{
+    padding: 2%;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0%;
+    background: white;
+    border-color: grey;
+}
+
+
+
+.modal--start {
+    display: flex;
+    animation-duration: 0.6s;
+    animation-name: modalStart;
+
+    @keyframes modalStart {
+        from {
+            top: 0;
+        }
+        to {
+            top: 50%;
+        }
+    }
+
+}
+
+.modal--end {
+    display: none;
+}
+
+
+

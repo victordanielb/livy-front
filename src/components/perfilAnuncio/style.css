@@ -1,0 +1,204 @@
+.perfilAnuncioTxtNome {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.perfilAnuncioDesc {
+    background-color: white;
+    padding: 2%;
+    text-align: justify;
+}
+
+.perfilAnuncioRealizado {
+    display: flex;
+    width: 95%;
+    height: 100px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.perfilAnuncioRealizado img {
+    width: 80px;
+    height: 80px;
+    margin: 0% 1% 0% 1%;
+}
+
+.perfilAnuncioRealizado::-webkit-scrollbar {
+    height: 8px;
+    background-color: #F5F5F5;
+}
+
+.perfilAnuncioRealizado::-webkit-scrollbar-thumb {
+    background-color: rgb(192, 192, 192);
+    border-radius: 8px;
+    transition-delay: 0.4s;
+}
+
+.perfilAnuncioRealizado::-webkit-scrollbar-thumb:active {
+    background-color: rgb(27, 27, 27);
+}
+
+.perfilAnuncioRealizado a {
+    width: 80px;
+    height: 80px;
+    margin: 0% 1% 0% 1%;
+}
+
+.perfilAvaliacao {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.perfilStars {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    width: 50%;
+    color: white;
+}
+
+.perfilStars legend {
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+.perfilQtdServicos {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    margin-left: 15%;
+}
+
+.perfilQtdServicos legend {
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.txtQtdServicos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.txtQtdServicos b {
+    margin-left: 2%;
+}
+
+.txtValorServico {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    color: white;
+    justify-content: flex-end;
+    margin-right: 5%;
+    margin-top: 6%;
+}
+
+.txtValorServico b {
+    font-size: 25px;
+}
+
+.txtTipoServico {
+    color: white;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin-top: 4%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.buttonsGroup-one {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.customButtom-one {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 70px;
+    margin-bottom: 11%;
+}
+
+.customButtom-one a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(33, 71, 126);
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10%;
+    border: 1px solid white;
+}
+
+.customButtom-one:active a {
+    background-color: rgb(0, 106, 255);
+}
+
+.customButtom-one svg {
+    margin-top: 5%;
+    margin-left: 1%;
+}
+
+.customButtom-one b {
+    font-size: 30px;
+    margin-top: 5%;
+}
+
+.customButtom-two {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 70px;
+    margin-bottom: 11%;
+}
+
+.customButtom-two a {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(23, 133, 42);
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.customButtom-two:active a {
+    background-color: rgb(40, 255, 75);
+}
+
+.customButtom-two svg {
+    margin-top: 5%;
+    margin-left: 1%;
+}
+
+.customButtom-two b {
+    font-size: 30px;
+    margin-top: 5%;
+}

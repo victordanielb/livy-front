@@ -1,0 +1,59 @@
+.rowLine {
+  gap: 0 50px;
+}
+
+.cadUser {
+  margin-top: 5%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.cadUser label {
+  color: #7e7a7a;
+}
+.cadUser input {
+  border: 0px none;
+  border-bottom: 1px solid var(--color-default);
+  border-radius: 0px;
+  height: 30px;
+  padding: 2%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cadUser input[type=file] {
+  border-bottom: inherit;
+}
+
+.cadUser input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2pt #046ffa;
+}
+
+.buttonSubmit {
+  height: 40px;
+  padding: 2%;
+  width: 70%;
+  border: 0px transparent;
+  background-color: var(--color-default);
+  border-radius: 16px;
+  align-self: center;
+  color: white;
+  margin-bottom: 5%;
+  font-size: 15px;
+  font-weight: bold;
+  width: 200px;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
+@media only screen and (min-width: 720px) {
+  .cadUser {
+    padding: 0 100px;
+    box-sizing: border-box;
+  }
+}

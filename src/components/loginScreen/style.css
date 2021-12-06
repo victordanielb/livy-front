@@ -1,0 +1,60 @@
+.contentOrange {
+  background-color: var(--color-default);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 5%;
+  align-items: center;
+}
+.contentOrange input[type=email], .contentOrange input[type=password] {
+  margin-top: 5%;
+  height: 22px;
+  border-radius: 6px;
+  width: 65%;
+  border: 0px none;
+  padding: 2%;
+  font-size: 16px;
+}
+.contentOrange input[type=email]:focus, .contentOrange input[type=password]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2pt #046ffa;
+}
+.contentOrange button[type=submit] {
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 170px;
+  height: 45px;
+  box-shadow: 0 0 3px 1px black;
+
+}
+.contentOrange a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+@media only screen and (min-width: 720px) {
+  .contentOrange {
+    padding-bottom: 35px;
+  }
+
+  .contentOrange input[type=email],
+  .contentOrange input[type=password] {
+    height: 30px;
+    max-width: 300px;
+    padding: 10px 20px;
+  }
+
+  .contentOrange input[type=password] {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,76 @@
+.container {
+  animation-name: opactity-more;
+  animation-duration: 0.5ms; }
+@keyframes opactity-more {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  .container .orange--separator_md {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: var(--color-default);
+    align-items: center;
+    padding: 3% 0;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    overflow: hidden; }
+    .container .orange--separator_md b {
+      margin-left: 5%; }
+  .container .warning--done_request {
+    margin-top: 13%;
+    padding: 3%;
+    text-align: center;
+    color: orangered; }
+  .container .content--done_icon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    background: transparent; }
+  .container .external_done {
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    width: 112px;
+    border-radius: 25px;
+    padding: 2%;
+    background: var(--color-default);
+    animation-name: success--animation_box;
+    animation-duration: 1s; }
+    .container .external_done .MuiSvgIcon-root {
+      font-size: 4.5rem;
+      border: 1px solid transparent;
+      border-radius: 100%;
+      color: var(--color-default);
+      background: white;
+      animation-name: success--animation_icon;
+      animation-duration: 1s; }
+@keyframes success--animation_icon {
+  from {
+    opacity: 0.5;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    background: var(--color-default);
+    border-color: transparent; }
+  to {
+    opacity: 1;
+    color: var(--color-default);
+    background: white; } }
+@keyframes success--animation_box {
+  from {
+    background-color: transparent;
+    border-radius: 100%;
+    padding: 0%;
+    border-color: transparent;
+    width: 40px; }
+  to {
+    background: var(--color-default);
+    border-radius: 25px;
+    padding: 2%; } }
+
+/*# sourceMappingURL=style.css.map */

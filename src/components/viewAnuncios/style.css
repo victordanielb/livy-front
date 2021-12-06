@@ -1,0 +1,37 @@
+.warning--not_found {
+    display: flex;
+    widows: 100%;
+    padding: 5%;
+    color: rgba(253, 185, 121, 0.459);
+    text-align: center;
+}
+
+.filter {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 12px 0;
+    background: var(--color-default);
+    border: 1px solid var(--color-default);
+}
+
+.option-filter {
+    cursor: pointer;
+    text-align: center;
+    padding: 6px 9px;
+    border: 1px solid white;
+    border-bottom: 0;
+    border-top: 0;
+    color: white;
+}
+.click-option {
+    color: black;
+    background-color: white;
+}
+
+@media only screen and (min-width: 720px) { 
+    .option-filter {
+        width: 130px;
+    }
+}

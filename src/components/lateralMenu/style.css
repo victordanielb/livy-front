@@ -1,0 +1,104 @@
+.containerMenu  {
+    background-color: var(--color-default);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.menuIcon {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid white;
+}
+.menuIcon path {
+    color: white;
+}
+
+.perfilImage {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    height: 220px;
+    border-bottom: 1px solid white;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0% 3% 0%;
+}
+.perfilImage img {
+    border: 1px solid transparent;
+    border-radius: 100%;
+    width: 50%;
+}
+.menuItem {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    height: auto;
+    margin: 2% 0% 2% 0%;
+    transition: 0.2s;
+    flex-direction: row;
+}
+.menuItem b{
+    margin: 4%;
+}
+.menuItem svg{
+    margin: 3%;
+}
+.menuItem:active {
+    background-color: var(--color-default);
+    color: white;
+}
+.menuItem b {
+    width: 75%;   
+}
+.menuItem path {
+    color: black;
+    transition: 0.2s;
+}
+.menuItem:active path {
+    color: white;
+}
+footer {
+    height: 100vh;
+    padding-top: 5%;
+}
+
+@media only screen and (min-width: 720px) { 
+    .perfilImage img {
+        width: 200px;
+        height: 200px;
+        max-width: inherit;
+        min-width: inherit;
+    }
+
+    .menuItem {
+        margin: 0;
+        margin: 2px 0;
+        cursor: pointer;
+        padding: 10px 20px;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .menuItem:hover {
+        background-color: #eddfff;
+    }
+
+    .containerMenu a:nth-of-type(1) {
+        margin-top: 50px;
+    }
+
+    .menuItem b {
+        margin: 0;
+    }
+
+    .menuItem svg {
+        margin: 0;
+    }
+}
