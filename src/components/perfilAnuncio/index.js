@@ -31,7 +31,7 @@ export default class PerfilAnuncio extends Component {
   componentDidMount() {
     findServicesById(parseInt(this.props.match.params.perfil)).then(data => {
       this.setState({
-        image: data.file > 0 ? data.file[0].path.replace("localhost", "ec2-3-142-150-245.us-east-2.compute.amazonaws.com") : null,
+        image: data.file > 0 ? data.file[0].path.replace("localhost", "ec2-3-138-100-12.us-east-2.compute.amazonaws.com") : null,
         name: data.user.name,
         idade: this.calcAge(data.user.birth_date),
         description: data.description,

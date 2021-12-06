@@ -24,7 +24,7 @@ export default class LateralMenu extends Component {
   componentDidMount(){
     findUserById(parseInt(this.props.match.params.userId)).then(data => {
       this.setState({
-        image: data.file.length > 0 ? data.file[0].path.replace("localhost", "ec2-3-142-150-245.us-east-2.compute.amazonaws.com") : null,
+        image: data.file.length > 0 ? data.file[0].path.replace("localhost", "ec2-3-138-100-12.us-east-2.compute.amazonaws.com") : null,
       })
     });    
   }

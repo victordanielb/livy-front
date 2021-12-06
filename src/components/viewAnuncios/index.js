@@ -137,7 +137,7 @@ export default class ViewAnuncios extends Component {
                     image={
                       v.user.file.length > 0 
                       ? 
-                        v.user.file[0].path.replace("localhost", "ec2-3-142-150-245.us-east-2.compute.amazonaws.com")
+                        v.user.file[0].path.replace("localhost", "ec2-3-138-100-12.us-east-2.compute.amazonaws.com")
                       :
                         null
                     }
