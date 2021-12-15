@@ -47,6 +47,7 @@ class Modal extends React.Component {
             </React.Fragment>
         )
     }
+
     renderPend() {
         const { alterFunction, date } = this.props
         return (
@@ -59,7 +60,7 @@ class Modal extends React.Component {
                             ?
                                 <React.Fragment>
                                     <button id="cancel-button" onClick={() => alterFunction({ status_worker: "C", status: "C", finish_service: this.nowDate()  })} value="Cancelar">Cancelar</button>
-                                    <button id="done-sbutton" disabled={ this.state.dateValue === "" ? true : false }>Definir</button>
+                                    <button id="done-sbutton" onClick={() => alterFunction({ status_worker: "A", status: "A", start_service: this.nowDate()  })} disabled={!this.state.dateValue}>Definir</button>
                                 </React.Fragment>
                             :
                                 <React.Fragment>

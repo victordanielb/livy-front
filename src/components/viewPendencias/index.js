@@ -34,7 +34,6 @@ export default class ViewPendencias extends Component {
                     return v.usercontractor.id === userId && ( v.status_contractor === "A" || v.status_contractor == null )
                 })
             })
-            debugger;
         });
     }
 
@@ -59,8 +58,6 @@ export default class ViewPendencias extends Component {
     }
     
     showModal(param, renderSolic, status, serviceId, date) {
-
-        console.log(status)
         this.setState({
             showModal: param,
             serviceInModal: serviceId,
@@ -102,9 +99,8 @@ export default class ViewPendencias extends Component {
                                             key={i} 
                                             image={null}
                                             userId={v.userworker.id}
-                                            specialization={v.service.specialization}
-                                            age={this.calcAge(v.userworker.birth_date)}
-                                            user_name={v.userworker.name}
+                                            age={this.calcAge(v.usercontractor.birth_date)}
+                                            user_name={v.usercontractor.name}
                                             price_type={v.service.price_type}
                                             price={v.service.price}
                                             categoria={this.props.match.params.categoria} 

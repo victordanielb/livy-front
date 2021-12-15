@@ -24,10 +24,11 @@ export default class ItensAnuncios extends Component {
             <b>{this.props.user_name}</b><br />
             { this.props.type === undefined ? null : `Tipo: ${this.props.type}` }
             { this.props.type === undefined ? null : <br /> }
-            Especialidade: {this.props.specialization}<br />
-            Idade: {this.props.age}<br />
-            Tipo Cobranca: {this.props.price_type}<br />
-            Valor: {this.props.price}<br />
+
+            {this.props.specialization && `Especialidade: ${this.props.specialization}`}<br />
+            {this.props.age && `Idade: ${this.props.age}`}<br />
+            {this.props.price_type && `Tipo Cobranca: ${this.props.price_type}`}<br />
+            {this.props.price && `Valor: ${this.props.price}`}<br />
           </div>
           <div className="icons_notification">
               { 

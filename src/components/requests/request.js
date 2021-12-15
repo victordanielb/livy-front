@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { url } from './url';
 
-const createAd = async({user_id, type, description, specialization, price_type, price, createdAt, updatedAt, id}) => {
+const createAd = async({ user_id, type, description, specialization, price_type, price, createdAt, updatedAt, id }) => {
 
     const contenta = {
         id,
@@ -15,25 +15,25 @@ const createAd = async({user_id, type, description, specialization, price_type, 
         updatedAt
     }
     debugger;
-    await axios.post(`${url}/services`, contenta).then( (res) => {
+    await axios.post(`${url}/services`, contenta).then((res) => {
         console.log(res);
         // window.location.reload();
     }).catch((error) => {
         console.log(error);
-    }); 
+    });
 }
 
 const findServices = async() => {
     const response = await axios.get(`${url}/services`);
 
-    if(response.status === 200) {
+    if (response.status === 200) {
         return response.data
     }
 }
 
-const sendFile = async (file, id) => {
+const sendFile = async(file, id) => {
     debugger;
-    
+
     if (file != undefined) {
         const data = new FormData();
         data.append("file", file[0]);
@@ -50,7 +50,7 @@ const sendFile = async (file, id) => {
     }
 }
 
-const createUser = async ({ name, email, password, user_uf, user_city, cel, date, file }) => {
+const createUser = async({ name, email, password, user_uf, user_city, cel, date, file }) => {
 
     const content = {
         name,
@@ -72,7 +72,7 @@ const createUser = async ({ name, email, password, user_uf, user_city, cel, date
     }
 }
 
-const findServicesByType = async ({ categoria }) => {
+const findServicesByType = async({ categoria }) => {
 
     const res = await axios.get(`${url}/services/${encodeURIComponent(categoria)}`)
     if (res.status === 200) {
@@ -80,21 +80,21 @@ const findServicesByType = async ({ categoria }) => {
     }
 }
 
-const findServicesById = async (perfil) => {
+const findServicesById = async(perfil) => {
     const res = await axios.get(`${url}/services/id/${perfil}`)
     if (res.status === 200) {
         return res.data;
     }
 }
 
-const findServicesByUserId = async (user_id) => {
+const findServicesByUserId = async(user_id) => {
     const res = await axios.get(`${url}/services/user_id/${user_id}`)
     if (res.status === 200) {
         return res.data;
     }
 }
 
-const findUserById = async (id_user) => {
+const findUserById = async(id_user) => {
     const res = await axios.get(`${url}/users/${id_user}`)
 
     if (res.status === 200) {
@@ -102,8 +102,8 @@ const findUserById = async (id_user) => {
     }
 }
 
-const createrWork = async ({ worker_id, contractor_id, service_id, created_at, updated_at }) => {
-    
+const createrWork = async({ worker_id, contractor_id, service_id, created_at, updated_at }) => {
+
     const content = {
         worker_id,
         contractor_id,
@@ -121,8 +121,7 @@ const createrWork = async ({ worker_id, contractor_id, service_id, created_at, u
     }
 }
 
-const findWorks = async () => {
-
+const findWorks = async() => {
     const res = axios.get(`${url}/doneWorkers`);
     if (res.status === 200) {
         return res.data
@@ -131,7 +130,7 @@ const findWorks = async () => {
     }
 }
 
-const findFile = async (user_id) => {
+const findFile = async(user_id) => {
     const res = await axios.get(`${url}/file/${user_id}`);
     if (res.status === 200) {
         return res.data;
@@ -140,33 +139,33 @@ const findFile = async (user_id) => {
     }
 }
 
-const deleteServiceById = async ({ userId, serviceId }) => {
+const deleteServiceById = async({ userId, serviceId }) => {
 
     const res = await axios.delete(`${url}/services/${serviceId}`)
     window.location.href = `/${userId}/miServices/`;
 }
 
-const updateService = async (content, serviceId) => {
+const updateService = async(content, serviceId) => {
     const res = await axios.put(`${url}/services/${serviceId}`, content)
     window.location.reload();
 }
 
-const updateUser = async (content, userId) => {
+const updateUser = async(content, userId) => {
     const res = await axios.put(`${url}/users/${userId}`, content)
     window.location.reload();
 }
 
-const updateWork = async (content, workId) => {
+const updateWork = async(content, workId) => {
     const res = await axios.put(`${url}/doneWorkers/${workId}`, content)
     window.location.reload();
 }
 
 const login = async(content) => {
-    const res = await axios.post(`${url}/users/login`, content) 
+    const res = await axios.post(`${url}/users/login`, content)
 
-    if(res.status === 200) {
-        window.location.href =  `/${res.data.user.id}`;
-    }else {
+    if (res.status === 200) {
+        window.location.href = `/${res.data.user.id}`;
+    } else {
         return (res);
     }
 }
